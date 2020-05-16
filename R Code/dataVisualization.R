@@ -1,4 +1,4 @@
-source("dataModel.R")
+source("R Code/dataModel.R")
 
 #### Heat Maps ####
 x <- seq(-5,5,by=0.05)
@@ -208,6 +208,3 @@ ggplot(newdata,aes(x=xj,y=yj))+geom_raster(aes(fill=prob))+
 				panel.ontop = TRUE,plot.margin=grid::unit(c(0,0,0,0), "mm")) +
 	facet_grid(Off.Scenario~Defense,switch="x")+theme(strip.placement = "outside",
 																										plot.title = element_text(hjust = 0.5))+ggtitle(label="Women's Left-Handed Skip")
-
-
-#### Women ####

@@ -1,4 +1,4 @@
-source("dataExploration.R")
+source("R Code/dataExploration.R")
 
 #### Logistic Model ####
 library(caret)

@@ -1,5 +1,5 @@
 library(magrittr)
-library(dplyr) 
+library("dplyr") 
 
 #### dataClean class ####
 dataClean <- setRefClass("dataClean",
@@ -9,7 +9,7 @@ dataClean <- setRefClass("dataClean",
 												 
 												 method = list(
 												 	initialize = function(fileName = NA_character_) {
-												 		.self$fileName = fileName
+												 		.self$fileName <<- fileName
 												 	},
 												 	
 												 	readFile = function() {

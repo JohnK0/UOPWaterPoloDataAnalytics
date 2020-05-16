@@ -1,4 +1,4 @@
-source("dataClean.R")
+source("R Code/dataClean.R")
 
 #### Men ####
 m = dataClean(fileName = "Men_Shots.csv")
@@ -37,3 +37,4 @@ sum(dataset$Goal==TRUE)/length(dataset$X)
 # Prints the results of the LEFT hand #
 colSums(table(dataset$Result,dataset$Hand))
 table(dataset$Result,dataset$Hand)
+
